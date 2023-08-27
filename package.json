@@ -13,6 +13,7 @@
     "@astrojs/mdx": "^0.19.7",
     "@storybook/react": "^7.3.2",
     "astro": "^2.10.14",
+    "astro-icon": "^0.8.1",
     "react95": "^4.0.0",
     "styled-components": "^6.0.7"
   },
