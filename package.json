@@ -1,0 +1,21 @@
+{
+  "name": "pedrops-dev",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@storybook/react": "^7.3.2",
+    "astro": "^2.10.14",
+    "react95": "^4.0.0",
+    "styled-components": "^6.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.21"
+  }
+}
