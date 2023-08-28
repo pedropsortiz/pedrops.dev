@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/Article.astro
 title: 🎓 Como a faculdade mudou minha visão sobre o mercado de trabalho
-subtitle: Desapontado, porém não surpreso
+subtitle: Decepcionado, porém não surpreso
 author: Pedro Ortiz
-tags: ["Faculdade", Mercado de trabalho"]
+tags: ["Faculdade", "Mercado de trabalho"]
 readingTime: 12 minutos de leitura
 
 ---
