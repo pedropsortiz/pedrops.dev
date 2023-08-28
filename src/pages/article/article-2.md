@@ -3,11 +3,10 @@ layout: ../../layouts/Article.astro
 title: Lorem Ipsum
 subtitle: ou n
 author: Pedro Ortiz
-pubDate: 2023-08-27
 image:
-    url: 'https://liga.ventures/wp-content/uploads/2019/10/alex-kotliarskyi-ourQHRTE2IM-unsplash-compressor-1.jpg'
+    url: 'https://www.aberje.com.br/wp-content/uploads/2016/03/lorem-ipsum.jpg'
     alt: 'Definitivamente eu.'
-tags: ["Lorem", "Trabalho em equipe", "Ipsum"]
+tags: ["Lorem", "Hackathon"]
 readingTime: 3 minutos
 ---
 

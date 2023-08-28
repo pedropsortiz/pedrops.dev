@@ -1,11 +1,14 @@
 ---
 layout: ../../layouts/Article.astro
 title: 👨‍💻📚 Minha primeira vez participando de um Hackathon
-subtitle: teste
+subtitle: Foi mais cansativo e interessante do que eu esperava
 author: Pedro Ortiz
-pubDate: 2023-08-27
 tags: ["Javascript", "Trabalho em equipe", "Hackathon"]
-readingTime: 3 minutos
+readingTime: 3 minutos de leitura
+image:
+    url: https://www.mizaic.com/_astro/1500x1300-1_1137ng.png
+    alt: 'Definitivamente eu.'
+
 ---
 
 <title>Minha primeira vez participando de um Hackathon</title>
