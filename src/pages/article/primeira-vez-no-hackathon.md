@@ -9,7 +9,10 @@ readingTime: 3 minutos de leitura
 
 <title>Minha primeira vez participando de um Hackathon</title>
 
+### 3 minutos de leitura
 # 👨‍💻 Minha primeira vez participando de um Hackathon
+
+![plot](../../images/article/primeira-vez-no-hackathon/homem-ferro.png)
 
 ---
 

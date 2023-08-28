@@ -6,6 +6,7 @@ author: Pedro Ortiz
 tags: ["Faculdade", "Mercado de trabalho"]
 readingTime: 12 minutos de leitura
 
+
 ---
 
 <title>Como a faculdade mudou minha visão sobre o mercado de trabalho</title>
