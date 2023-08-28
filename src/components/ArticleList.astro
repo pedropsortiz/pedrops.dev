@@ -1,0 +1,36 @@
+---
+const allPosts = await Astro.glob('../pages/article/*.md');
+---
+
+{
+  allPosts.map((post) => (
+  <a href={post.url}>
+    <div class="article-box">
+      <h2>
+        {post.frontmatter.title}
+      </h2>
+      <p>{post.frontmatter.subtitle}</p>
+      <p>Published on: {post.frontmatter.pubDate}</p>
+      <p>Reading Time: {post.frontmatter.readingTime}</p>
+      <p>Tags: {post.frontmatter.tags.join(', ')}</p>
+    </div>
+</a>
+  ))
+}
+
+<style>
+  .article-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .article-box h2 {
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>

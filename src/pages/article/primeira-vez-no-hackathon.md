@@ -1,8 +1,11 @@
 ---
 layout: ../../layouts/Article.astro
 title: 👨‍💻📚 Minha primeira vez participando de um Hackathon
+subtitle: teste
 author: Pedro Ortiz
 pubDate: 2023-08-27
+tags: ["Javascript", "Trabalho em equipe", "Hackathon"]
+readingTime: 3 minutos
 ---
 
 <title>Minha primeira vez participando de um Hackathon</title>
