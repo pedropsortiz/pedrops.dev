@@ -1,18 +1,16 @@
 ---
 layout: ../../layouts/Article.astro
-title: Lorem Ipsum
-subtitle: ou n
+title: 🎓 Como a faculdade mudou minha visão sobre o mercado de trabalho
+subtitle: Desapontado, porém não surpreso
 author: Pedro Ortiz
-image:
-    url: 'https://www.aberje.com.br/wp-content/uploads/2016/03/lorem-ipsum.jpg'
-    alt: 'Definitivamente eu.'
-tags: ["Lorem", "Hackathon"]
-readingTime: 12 minutos
+tags: ["Faculdade", Mercado de trabalho"]
+readingTime: 12 minutos de leitura
+
 ---
 
-<title>Minha primeira vez participando de um Hackathon</title>
+<title>Como a faculdade mudou minha visão sobre o mercado de trabalho</title>
 
-# 👨‍💻📚 Minha primeira vez participando de um Hackathon
+# 🎓 Como a faculdade mudou minha visão sobre o mercado de trabalho
 
 ---
 

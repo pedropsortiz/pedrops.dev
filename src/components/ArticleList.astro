@@ -4,6 +4,8 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 
 {
   allPosts.map((post) => (
+    <div>
+    </div>
     <a href={post.url}>
       <div class="box">
         <div class="titleSubtitle">
@@ -26,7 +28,9 @@ const allPosts = await Astro.glob('../pages/article/*.md');
   }
 
   .box {
-    margin: 30px;
+    width: 60%;
+    margin-bottom: 1%;
+    margin-left: 6%;
     padding: 15px;
     border-radius: 5px;
     border-color: white;

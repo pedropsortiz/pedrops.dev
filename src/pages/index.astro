@@ -3,11 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import ArticleList from '../components/ArticleList.astro';
 import Introduction from '../components/Intoduction.astro';
 import Navbar from '../components/Navbar.astro';
+const allPosts = await Astro.glob('../pages/article/*.md');
+
 ---
 <Navbar />
 <Layout title="Pedro Ortiz">
 	<main>
 		<Introduction />
+		<div class="articleListTitle">
+			📕 {allPosts.length} artigos até agora.
+		</div>
 		<ArticleList />
 	</main>
 </Layout>
@@ -42,6 +47,11 @@ import Navbar from '../components/Navbar.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+	.articleListTitle {
+		width: 60%;
+		margin-bottom: 1%;
+		margin-left: 6%;
 	}
 </style>
 
