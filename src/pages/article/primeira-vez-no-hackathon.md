@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Article.astro
-title: 👨‍💻📚 Minha primeira vez participando de um Hackathon
+title: 👨‍💻📚 Minha primeira vez participando em um Hackathon
 subtitle: Foi mais cansativo e interessante do que eu esperava
 author: Pedro Ortiz
 tags: ["Javascript", "Trabalho em equipe", "Hackathon"]

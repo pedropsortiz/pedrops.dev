@@ -7,7 +7,7 @@ image:
     url: 'https://www.aberje.com.br/wp-content/uploads/2016/03/lorem-ipsum.jpg'
     alt: 'Definitivamente eu.'
 tags: ["Lorem", "Hackathon"]
-readingTime: 3 minutos
+readingTime: 12 minutos
 ---
 
 <title>Minha primeira vez participando de um Hackathon</title>

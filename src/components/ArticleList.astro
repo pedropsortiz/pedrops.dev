@@ -4,53 +4,49 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 
 {
   allPosts.map((post) => (
-  <a href={post.url}>
-    <div class="box" style="background-color: #252933; color: white;">
-      <article class="media">
-    <div class="media-left">
-      <figure class="image">
-        <img src={post.frontmatter.image.url} alt="Image">
-      </figure>
-    </div>
-    <div class="media-content">
-      <div class="content">
-        <p>
-          <strong>{post.frontmatter.title}</strong> 
-          <br> <p>{post.frontmatter.subtitle}</p>
-        </p>
-      </div>
-      <nav class="level is-mobile">
-        <div class="level-left">
-          {post.frontmatter.readingTime}</small> <small>{post.frontmatter.tags.join(', ')}</small>
+    <a href={post.url}>
+      <div class="box">
+        <div class="titleSubtitle">
+          <h3>{post.frontmatter.title}</h3>
+          <p><small>{post.frontmatter.subtitle}</small></p>
         </div>
-      </nav>
-    </div>
-  </article>
-    </div>
-</a>
+        <hr>
+        <div class="footer">
+          <small>{post.frontmatter.readingTime}</small> <small>{post.frontmatter.tags.join(', ')}</small>
+        </div>
+      </div>
+
+    </a>
   ))
 }
 <style>
-  @import "../style/bulma/sass/elements/box.sass";
-  @import "../style/bulma/sass/elements/image.sass";
-  @import "../style/bulma/sass/elements/content.sass";
-  @import "../style/bulma/sass/components/media.sass";
-  @import "../style/bulma/sass/components/level.sass";
-
-  .image {
+  img {
     width: 100px;
+    padding: 10px;
   }
+
   .box {
-  border: 1px; 
-  border-color: white;
-  background-color: #13151A;
-  margin: 15px;
-  color: white;
-}
+    margin: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    border-color: white;
+    background-color:#252933;
+  }
+
+  .box h3 {
+    margin-top: 0px;
+    margin-bottom: -30px;
+  }
+
+  .footer small {
+    color: #919191;
+  }
 
   a {
     color: inherit;
     text-decoration: none;
   }
-
 </style>
+
+          
+        
