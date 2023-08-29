@@ -4,8 +4,7 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 
 {
   allPosts.map((post) => (
-    <div>
-    </div>
+
     <a href={post.url}>
       <div class="box">
         <div class="titleSubtitle">
@@ -14,7 +13,7 @@ const allPosts = await Astro.glob('../pages/article/*.md');
         </div>
         <hr>
         <div class="footer">
-          <small>{post.frontmatter.readingTime}</small> <small>{post.frontmatter.tags.join(', ')}</small>
+          <small>{post.frontmatter.readingTime}</small> <small id="tags">{post.frontmatter.tags.join(', ')}</small>
         </div>
       </div>
 
@@ -22,19 +21,17 @@ const allPosts = await Astro.glob('../pages/article/*.md');
   ))
 }
 <style>
-  img {
-    width: 100px;
-    padding: 10px;
-  }
 
   .box {
-    width: 60%;
     margin-bottom: 1%;
-    margin-left: 6%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     border-color: white;
     background-color:#252933;
+  }
+
+  #tags {
+    font-size: 12px;
   }
 
   .box h3 {

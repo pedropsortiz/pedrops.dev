@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import ArticleList from '../components/ArticleList.astro';
 import Introduction from '../components/Intoduction.astro';
 import Navbar from '../components/Navbar.astro';
+import ProjectsList from '../components/ProjectsList.astro';
 const allPosts = await Astro.glob('../pages/article/*.md');
 
 ---
@@ -14,11 +15,14 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 			📕 {allPosts.length} artigos até agora.
 		</div>
 		<table>
-			<td>
+			<td id="articleList">
 				<ArticleList />
 			</td>
-			<td>
-				teste
+			<td id="projectList">
+				<div class="projectListTitle">
+					<h3>Meus projetos</h3>
+				</div>
+				<ProjectsList />
 			</td>
 		</table>
 	</main>
@@ -34,12 +38,23 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 		font-size: 20px;
 		line-height: 1.6;
 	}
+
 	table {
-		width: 100%;
-		margin-bottom: 1%;
-		margin-left: -1%;
+		margin-left: 5%;
+	}
+
+	td {
 		padding: 15px;
 	}
+
+	#projectList {
+	width: 300px; 
+	}
+
+	#articleList {
+		margin-top: 1%;
+	}
+
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
@@ -48,19 +63,6 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 		margin-bottom: 1em;
 	}
 
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
 	.articleListTitle {
 		width: 60%;
 		margin-bottom: 1%;
