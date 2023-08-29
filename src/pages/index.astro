@@ -11,20 +11,20 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 <Layout title="Pedro Ortiz">
 	<main>
 		<Introduction />
-		<div class="articleListTitle">
-			📕 {allPosts.length} artigos até agora.
-		</div>
-		<table>
-			<td id="articleList">
+		<div class="content-block">
+			<div>
+				<h3>
+					📕 {allPosts.length} artigos até agora.
+				</h3>
 				<ArticleList />
-			</td>
-			<td id="projectList">
-				<div class="projectListTitle">
-					<h3>Meus projetos</h3>
-				</div>
+			</div>
+			<div>
+				<h3>
+					Meus projetos
+				</h3>
 				<ProjectsList />
-			</td>
-		</table>
+			</div>
+		</div>
 	</main>
 </Layout>
 
@@ -64,9 +64,18 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 	}
 
 	.articleListTitle {
-		width: 60%;
 		margin-bottom: 1%;
 		margin-left: 6%;
+		width: 76%;
+		display: flex;
+		justify-content: space-between;
 	}
+
+	.content-block {
+		display: flex;
+		gap: 30px;
+		margin-left: 6%;
+	}
+
 </style>
 
