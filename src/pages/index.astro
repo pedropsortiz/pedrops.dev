@@ -13,7 +13,14 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 		<div class="articleListTitle">
 			📕 {allPosts.length} artigos até agora.
 		</div>
-		<ArticleList />
+		<table>
+			<td>
+				<ArticleList />
+			</td>
+			<td>
+				teste
+			</td>
+		</table>
 	</main>
 </Layout>
 
