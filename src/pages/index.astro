@@ -63,16 +63,9 @@ const allPosts = await Astro.glob('../pages/article/*.md');
 		margin-bottom: 1em;
 	}
 
-	.articleListTitle {
-		margin-bottom: 1%;
-		margin-left: 6%;
-		width: 76%;
-		display: flex;
-		justify-content: space-between;
-	}
-
 	.content-block {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 30px;
 		margin-left: 6%;
 	}
